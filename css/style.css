@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #222;
+}
+.container {
+  height: 100vh;
+}
+.container .box {
+  background: hsla(183, 92%, 53%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(183, 92%, 53%, 1) 0%,
+    hsla(185, 56%, 34%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(183, 92%, 53%, 1) 0%,
+    hsla(185, 56%, 34%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(183, 92%, 53%, 1) 0%,
+    hsla(185, 56%, 34%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#18EAF5", endColorstr="#267F87", GradientType=1 );
+}
+.box {
+  width: 450px;
+  height: 600px;
+}
+.input-group input {
+  border-radius: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid #ccc;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.25);
+}
+
+#icon {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#icon:hover {
+  transform: scale(1.1);
+}
+
+#icon img {
+  width: 40px;
+}
+
+.search {
+  transition: all 0.3s ease;
+}
+
+#temperature {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+#temperature h1 {
+  font-size: 60px;
+}
+#temperature h2 {
+  font-size: 50px;
+}
+#humidity .text {
+  color: white;
+}
